@@ -24,7 +24,7 @@ class Clarifai
     /**
      * @var string $VERSION The library version
      */
-    const VERSION = '0.9.5';
+    const VERSION = '0.9.6';
 
     /**
      * @var RequestHandler $clientId
