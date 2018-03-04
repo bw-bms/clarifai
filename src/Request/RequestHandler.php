@@ -63,7 +63,7 @@ class RequestHandler
      */
     public function __construct($apiKey)
     {
-        $this->$apiKey = $apiKey;
+        $this->apiKey = $apiKey;
         $this->client = new Client();
     }
 
@@ -122,7 +122,7 @@ class RequestHandler
     {
         $options = [
             'headers' => [
-                'Authorization' => 'Key'.$this->apiKey,
+                'Authorization' => 'Key '.$this->apiKey,
                 'User-Agent' => sprintf(
                   'Clarifai PHP (https://github.com/darrynten/clarifai-php);v%s;%s',
                   \DarrynTen\Clarifai\Clarifai::VERSION,
